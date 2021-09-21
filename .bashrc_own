@@ -1,0 +1,16 @@
+#Aliases
+alias ls="exa"
+alias eman="tldr find"
+alias vbox="VBoxManage"
+
+# Enviroment variables
+export VISUAL=nvim;
+export EDITOR=nvim;
+export RANGER_LOAD_DEFAULT_RC=FALSE
+export PATH="/opt/idea-IC-212.5080.55/bin:$PATH"
+export PATH="/home/jeppe/.local/bin:$PATH"
+
+
+source /usr/share/doc/fzf/examples/completion.bash
+source /usr/share/doc/fzf/examples/key-bindings.bash
+
