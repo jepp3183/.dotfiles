@@ -1,6 +1,6 @@
 #Aliases
 alias ls="exa"
-alias eman="tldr find"
+alias eman="tldr"
 alias vbox="VBoxManage"
 
 # Enviroment variables
