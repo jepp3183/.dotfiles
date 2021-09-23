@@ -4,4 +4,8 @@ ln -s ~/.dotfiles/.bashrc_own ~/bashrc_own
 
 #init.vim
 mkdir ~/.config/nvim
-ls -s ~/.dotfiles/init.vim ~/.config/nvim/init.vim
+ln -s ~/.dotfiles/init.vim ~/.config/nvim/init.vim
+
+#ranger
+rm -r /home/jeppe/.config/ranger
+ln -s ~/.dotfiles/ranger ~/.config/ranger
