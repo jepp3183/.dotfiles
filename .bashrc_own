@@ -2,7 +2,7 @@
 alias ls="exa"
 alias eman="tldr"
 alias vbox="VBoxManage"
-alias UNI="cd '/home/jeppe/Google Drive/SkoleShit/UNI'"
+alias UNI="cd '/home/jeppe/GoogleDrive/SkoleShit/UNI'"
 
 # Enviroment variables
 export VISUAL=nvim;
