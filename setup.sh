@@ -1,11 +1,11 @@
 #bashrc
-echo "source ~/.dotfiles/.bashrc_own" >> ~/.bashrc
-ln -s ~/.dotfiles/.bashrc_own ~/bashrc_own
+echo "source /home/jeppe/.dotfiles/.bashrc_own" >> /home/jeppe/.bashrc
+ln -s /home/jeppe/.dotfiles/.bashrc_own ~/.bashrc_own
 
 #init.vim
-mkdir ~/.config/nvim
-ln -s ~/.dotfiles/init.vim ~/.config/nvim/init.vim
+mkdir /home/jeppe/.config/nvim
+ln -s /home/jeppe/.dotfiles/init.vim ~/.config/nvim/init.vim
 
 #ranger
 rm -r /home/jeppe/.config/ranger
-ln -s ~/.dotfiles/ranger ~/.config/ranger
+ln -s /home/jeppe/.dotfiles/ranger ~/.config/ranger
