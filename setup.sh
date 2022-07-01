@@ -1,6 +1,5 @@
-#bashrc
-echo "source /home/jeppe/.dotfiles/.bashrc_own" >> /home/jeppe/.bashrc
-ln -s /home/jeppe/.dotfiles/.bashrc_own ~/.bashrc_own
+#zshrc
+ln -s /home/jeppe/.dotfiles/.zshrc ~/.zshrc
 
 #init.vim
 mkdir /home/jeppe/.config/nvim
