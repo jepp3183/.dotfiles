@@ -84,6 +84,7 @@ plugins=(
     sudo
     zsh-autosuggestions
     command-not-found
+    asdf
 
 
     # Syntax highlighting has to be last!
@@ -123,7 +124,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # #Aliases
 alias UNI="cd '/home/jeppe/GDrive/SkoleShit/UNI'"
+alias ranger=". ranger"
 alias o="xdg-open"
+alias gs="git status"
 
 bindkey "^K" history-substring-search-up
 bindkey '^[[A' history-substring-search-up
@@ -134,6 +137,8 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 export RANGER_LOAD_DEFAULT_RC=FALSE
 export PATH="/home/jeppe/.local/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin 
+export PATH="$PATH:/home/jeppe/.asdf/installs/elixir/1.13.4-otp-25/.mix/escripts"
 export SHELL=/bin/zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -145,3 +150,4 @@ export NVM_DIR="$HOME/.nvm"
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export PATH=$PATH:/home/jeppe/.spicetify
