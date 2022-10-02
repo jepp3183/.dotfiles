@@ -1,18 +1,17 @@
 call plug#begin()
+    Plug 'github/copilot.vim'
+    Plug 'preservim/nerdtree'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
-Plug 'github/copilot.vim'
-Plug 'preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
-
-
-
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
-let g:airline#extensions#tabline#enabled = 1
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_powerline_fonts = 1
 
 set number 
 set relativenumber
