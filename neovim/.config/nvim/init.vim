@@ -10,6 +10,8 @@ call plug#begin()
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+    Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+    Plug 'fannheyward/telescope-coc.nvim'
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
@@ -34,14 +36,35 @@ let mapleader=" "
 
 lua << EOF
 require("toggleterm").setup{}
+local telescope = require('telescope')
 
 require('telescope').setup{
   defaults = {
     mappings = {
       i = {
-        ["<Esc>"] = require('telescope.actions').close
-      }
+          ["<Esc>"] = require('telescope.actions').close,
+          ["<C-j>"] = require('telescope.actions').move_selection_next,
+          ["<C-k>"] = require('telescope.actions').move_selection_previous,
+          },
+    }
+  },
+  pickers = {
+    find_files = {
+        hidden = true
+    }
+  },
+  extensions = {
+    fzf = {
+      fuzzy = true,                    -- false will only do exact matching
+      override_generic_sorter = true,  -- override the generic sorter
+      override_file_sorter = true,     -- override the file sorter
+      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+                                       -- the default case_mode is "smart_case"
     }
   }
 }
+
+require('telescope').load_extension('fzf')
+require('telescope').load_extension('coc')
+
 EOF

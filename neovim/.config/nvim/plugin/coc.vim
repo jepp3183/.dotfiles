@@ -2,10 +2,6 @@
 set signcolumn=number
 set updatetime=300
 
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nmap <leader>rn <Plug>(coc-rename)
 
 " Fix for copilot/coc tab
@@ -23,7 +19,7 @@ endfunction
 let g:copilot_no_tab_map = v:true
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1):
-      \ exists('b:_copilot.suggestions') ? copilot#Accept("\<CR>") :
+      \ exists('b:_copilot.suggestions') ? copilot#Accept("") :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"

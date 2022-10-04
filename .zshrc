@@ -85,6 +85,7 @@ plugins=(
     zsh-autosuggestions
     command-not-found
     asdf
+    fzf
 
 
     # Syntax highlighting has to be last!
@@ -127,6 +128,7 @@ alias UNI="cd '/home/jeppe/GDrive/SkoleShit/UNI'"
 alias ranger=". ranger"
 alias o="xdg-open"
 alias gs="git status"
+alias nv="(cd ~/proj && nvim)"
 
 bindkey "^K" history-substring-search-up
 bindkey '^[[A' history-substring-search-up
