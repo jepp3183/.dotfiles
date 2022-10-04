@@ -6,6 +6,7 @@ call plug#begin()
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'akinsho/toggleterm.nvim', {'tag' : '2.2.1'}
     Plug 'morhetz/gruvbox'
+    Plug 'jiangmiao/auto-pairs'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -21,7 +22,11 @@ let g:airline_theme='base16_gruvbox_dark_hard'
 
 colorscheme gruvbox
 
+filetype plugin on
+syntax on
+
 set number 
+set cursorline
 set relativenumber
 set nocompatible
 set tabstop=4
@@ -31,7 +36,9 @@ set autoindent
 set t_Co=256
 set hidden
 set splitright
- 
+set splitbelow
+set nowrap
+
 let mapleader=" "
 
 lua << EOF
@@ -66,5 +73,11 @@ require('telescope').setup{
 
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
+
+require('nvim-treesitter.configs').setup {
+  ensure_installed = "all",
+  highlight = { enable = true },
+  indent = { enable = true }
+}
 
 EOF

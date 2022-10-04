@@ -26,3 +26,5 @@ nnoremap <leader>fo <cmd>Telescope coc document_symbols<cr>
 nnoremap <leader>fr <cmd>Telescope coc references_used<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true
