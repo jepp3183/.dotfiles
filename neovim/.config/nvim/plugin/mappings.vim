@@ -15,10 +15,12 @@ tnoremap <C-k> <Cmd>wincmd k<CR>
 
 nnoremap <leader>t :NERDTreeToggle<CR>
 
-nnoremap <C-d> <C-d>zz
-nnoremap <C-u> <C-u>zz
+" nnoremap <C-d> <C-d>zz
+" nnoremap <C-u> <C-u>zz
 nnoremap <C-j> }
 nnoremap <C-k> {
+nnoremap <C-h> <cmd>bprev<cr>
+nnoremap <C-l> <cmd>bnext<cr>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>

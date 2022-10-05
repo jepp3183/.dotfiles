@@ -1,5 +1,10 @@
 {
     "suggest.noselect": true,
-    "suggest.maxCompleteItemCount": 10
+    "suggest.maxCompleteItemCount": 10,
+    "coc.preferences.formatOnSaveFiletypes": [
+    "python"
+  ],
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Path": "~/.local/bin/autopep8"
 }
 

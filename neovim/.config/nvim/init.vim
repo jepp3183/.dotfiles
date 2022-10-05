@@ -7,6 +7,7 @@ call plug#begin()
     Plug 'akinsho/toggleterm.nvim', {'tag' : '2.2.1'}
     Plug 'morhetz/gruvbox'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'ryanoasis/vim-devicons'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -14,6 +15,8 @@ call plug#begin()
     Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
     Plug 'fannheyward/telescope-coc.nvim'
 call plug#end()
+
+let NERDTreeShowHidden=1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
