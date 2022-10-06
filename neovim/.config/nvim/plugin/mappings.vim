@@ -1,4 +1,5 @@
 imap jj <Esc>
+imap jk <Esc>
 imap kk <C-N>
 
 nnoremap <tab> >>_
@@ -17,10 +18,12 @@ nnoremap <leader>t :NERDTreeToggle<CR>
 
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
-nnoremap <C-j> }
-nnoremap <C-k> {
+nnoremap <C-j> 5jzz
+nnoremap <C-k> 5kzz
 nnoremap <C-h> <cmd>bprev<cr>
 nnoremap <C-l> <cmd>bnext<cr>
+nnoremap <C-s> :w<CR>
+nnoremap <C-q> :bd<CR>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>

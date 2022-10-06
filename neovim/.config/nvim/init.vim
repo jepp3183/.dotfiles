@@ -11,6 +11,7 @@ call plug#begin()
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'
     Plug 'ggandor/lightspeed.nvim'
+    Plug 'jamestthompson3/nvim-remote-containers'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

@@ -141,6 +141,7 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 export PATH="/home/jeppe/.local/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin 
 export PATH="$PATH:/home/jeppe/.asdf/installs/elixir/1.13.4-otp-25/.mix/escripts"
+export PATH="$PATH:/home/jeppe/.opam/4.14.0/bin"
 export SHELL=/bin/zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
