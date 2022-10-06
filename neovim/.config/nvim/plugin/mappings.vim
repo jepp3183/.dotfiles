@@ -11,7 +11,7 @@ map <Enter> o<ESC>k
 nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 autocmd TermEnter term://*toggleterm#*
       \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
-tnoremap <C-k> <Cmd>wincmd k<CR>
+tnoremap <C-n> <C-\><C-n>
 
 nnoremap <leader>t :NERDTreeToggle<CR>
 
