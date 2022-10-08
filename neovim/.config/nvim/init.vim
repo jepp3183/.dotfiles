@@ -46,7 +46,7 @@ set splitright
 set splitbelow
 set nowrap
 
-autocmd FileType ml setlocal shiftwidth=2 tabstop=2
+autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
 
 let mapleader=" "
 
