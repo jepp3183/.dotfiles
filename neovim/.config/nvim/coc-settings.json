@@ -1,17 +1,19 @@
 {
     "suggest.noselect": true,
     "suggest.maxCompleteItemCount": 10,
+    "suggest.labelMaxLength": 60,
     "coc.preferences.formatOnSaveFiletypes": [
-    "python",
-        "go"
-  ],
-  "python.formatting.provider": "autopep8",
-  "python.formatting.autopep8Path": "~/.local/bin/autopep8",
+        "python",
+            "go",
+            "rust"
+    ],
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Path": "~/.local/bin/autopep8",
     "languageserver": {
-  "ocaml-lsp": {
-    "command": "opam",
-    "args": ["config", "exec", "--", "ocamllsp"],
-    "filetypes": ["ocaml", "reason"]
-  }
-}
+        "ocaml-lsp": {
+            "command": "opam",
+            "args": ["config", "exec", "--", "ocamllsp"],
+            "filetypes": ["ocaml", "reason"]
+        }
+    }
 }

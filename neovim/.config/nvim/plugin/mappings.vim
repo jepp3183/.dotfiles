@@ -12,14 +12,14 @@ map <Enter> o<ESC>k
 nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 autocmd TermEnter term://*toggleterm#*
       \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
-tnoremap <C-n> <C-\><C-n>
+tnoremap <C-N> <C-\><C-N>
 
 nnoremap <leader>t :NERDTreeToggle<CR>
 
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
-nnoremap <C-j> 5jzz
-nnoremap <C-k> 5kzz
+nnoremap <C-j> 5j
+nnoremap <C-k> 5k
 nnoremap <C-h> <cmd>bprev<cr>
 nnoremap <C-l> <cmd>bnext<cr>
 nnoremap <C-s> :w<CR>
@@ -32,5 +32,5 @@ nnoremap <leader>fr <cmd>Telescope coc references_used<cr>
 nnoremap <leader>fd <cmd>Telescope coc workspace_diagnostics<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-imap <silent><script><expr> <C-J> copilot#Accept("\<CR>")
+imap <silent><script><expr> <C-L> copilot#Accept("\<CR>")
 let g:copilot_no_tab_map = v:true
