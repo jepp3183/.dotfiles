@@ -12,6 +12,7 @@ call plug#begin()
     Plug 'tpope/vim-repeat'
     Plug 'ggandor/lightspeed.nvim'
     Plug 'jamestthompson3/nvim-remote-containers'
+    Plug 'numToStr/Comment.nvim'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -99,5 +100,6 @@ require('nvim-treesitter.configs').setup {
   highlight = { enable = true },
   indent = { enable = true }
 }
+require('Comment').setup()
 
 EOF
