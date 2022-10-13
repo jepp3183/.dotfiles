@@ -12,7 +12,7 @@ call plug#begin()
     Plug 'numToStr/Comment.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'nvim-lualine/lualine.nvim'
-    Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+    Plug 'kdheepak/tabline.nvim'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -22,11 +22,6 @@ call plug#begin()
 call plug#end()
 
 let NERDTreeShowHidden=1
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_gruvbox_dark_hard'
 
 set background=dark
 
@@ -67,15 +62,11 @@ require('toggleterm').setup{
 
 require('lualine').setup {
     options = {
-        theme = 'gruvbox'
+        theme = 'codedark',
     }
 }
 
-require('bufferline').setup{
-options = {
-    diagnostics = "coc",
-}
-}
+require('tabline').setup()
 
 require('leap').add_default_mappings()
 require('leap').setup {
