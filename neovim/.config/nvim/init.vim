@@ -1,18 +1,18 @@
 call plug#begin()
     Plug 'github/copilot.vim'
     Plug 'preservim/nerdtree'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'akinsho/toggleterm.nvim', {'tag' : '2.2.1'}
-    Plug 'morhetz/gruvbox'
+    Plug 'ellisonleao/gruvbox.nvim'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'ryanoasis/vim-devicons'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'
-    Plug 'ggandor/lightspeed.nvim'
+    Plug 'ggandor/leap.nvim'
     Plug 'jamestthompson3/nvim-remote-containers'
     Plug 'numToStr/Comment.nvim'
+    Plug 'kyazdani42/nvim-web-devicons'
+    Plug 'nvim-lualine/lualine.nvim'
+    Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -28,7 +28,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_gruvbox_dark_hard'
 
-colorscheme gruvbox
+set background=dark
 
 filetype plugin on
 syntax on
@@ -41,6 +41,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+set termguicolors
 set t_Co=256
 set hidden
 set splitright
@@ -64,8 +65,24 @@ require('toggleterm').setup{
   direction = 'float'
 }
 
-local telescope = require('telescope')
+require('lualine').setup {
+    options = {
+        theme = 'gruvbox'
+    }
+}
 
+require('bufferline').setup{
+options = {
+    diagnostics = "coc",
+}
+}
+
+require('leap').add_default_mappings()
+require('leap').setup {
+    highlight_unlabeled = true
+}
+
+local telescope = require('telescope')
 require('telescope').setup{
   defaults = {
     mappings = {
@@ -101,5 +118,11 @@ require('nvim-treesitter.configs').setup {
   indent = { enable = true }
 }
 require('Comment').setup()
+
+require('gruvbox').setup({
+    bold = false,
+    italic = false
+})
+vim.cmd('colorscheme gruvbox')
 
 EOF

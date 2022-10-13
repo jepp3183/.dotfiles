@@ -1,6 +1,5 @@
 imap jj <Esc>
 imap jk <Esc>
-imap kk <C-N>
 
 nnoremap <tab> >>_
 nnoremap <S-tab> <<_
@@ -18,8 +17,8 @@ nnoremap <leader>t :NERDTreeToggle<CR>
 
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
-nnoremap <C-j> 5j
-nnoremap <C-k> 5k
+noremap <C-j> 5j
+noremap <C-k> 5k
 nnoremap <C-h> <cmd>bprev<cr>
 nnoremap <C-l> <cmd>bnext<cr>
 nnoremap <C-s> :w<CR>
