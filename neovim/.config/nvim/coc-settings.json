@@ -1,6 +1,5 @@
 {
     "suggest.noselect": true,
-    "suggest.maxCompleteItemCount": 10,
     "suggest.labelMaxLength": 60,
     "coc.preferences.formatOnSaveFiletypes": [
         "python",
