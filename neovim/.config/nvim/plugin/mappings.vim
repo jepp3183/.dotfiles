@@ -1,8 +1,9 @@
 imap jj <Esc>
 imap jk <Esc>
 
-nnoremap <tab> >>_
-nnoremap <S-tab> <<_
+" nnoremap <tab> >>_
+" nnoremap <S-tab> <<_
+" Note: the above two will unbind <C-i>, since tab and <C-i> are equivalent
 vnoremap <tab> >gv
 vnoremap <S-tab> <gv
 

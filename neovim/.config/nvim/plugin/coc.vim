@@ -37,5 +37,7 @@ endfunction
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+nmap gd <Plug>(coc-definition)
+
 " GO settings
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
