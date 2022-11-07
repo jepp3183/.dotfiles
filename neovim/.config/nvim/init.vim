@@ -12,6 +12,7 @@ call plug#begin()
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'nvim-lualine/lualine.nvim'
     Plug 'kdheepak/tabline.nvim'
+    Plug 'lervag/vimtex'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
