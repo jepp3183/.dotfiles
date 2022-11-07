@@ -1,12 +1,6 @@
 imap jj <Esc>
 imap jk <Esc>
 
-" nnoremap <tab> >>_
-" nnoremap <S-tab> <<_
-" Note: the above two will unbind <C-i>, since tab and <C-i> are equivalent
-vnoremap <tab> >gv
-vnoremap <S-tab> <gv
-
 map <Enter> o<ESC>k
 
 nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
