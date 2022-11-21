@@ -8,7 +8,6 @@ call plug#begin()
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'
     Plug 'ggandor/leap.nvim'
-    Plug 'jamestthompson3/nvim-remote-containers'
     Plug 'numToStr/Comment.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'nvim-lualine/lualine.nvim'
