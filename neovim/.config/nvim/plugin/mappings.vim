@@ -16,8 +16,8 @@ tnoremap <C-N> <C-\><C-N>
 
 nnoremap <leader>t :NERDTreeToggle<CR>
 
-nnoremap <C-d> <C-d>zz
-nnoremap <C-u> <C-u>zz
+" nnoremap <C-d> <C-d>zz
+" nnoremap <C-u> <C-u>zz
 noremap <C-j> 5j
 noremap <C-k> 5k
 nnoremap <C-h> <cmd>bprev<cr>

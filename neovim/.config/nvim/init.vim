@@ -43,6 +43,8 @@ set hidden
 set splitright
 set splitbelow
 set nowrap
+set ignorecase
+set smartcase
 
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
 

@@ -125,9 +125,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # #Aliases
 alias UNI="cd '/home/jeppe/GDrive/SkoleShit/UNI'"
-alias ranger=". ranger"
 alias o="xdg-open"
 alias gs="git status"
+
+# FOR DOVS (delete when done)
+alias mk="make clean && make all"
+alias sc='./tigerll.sh testcases/scratch.tig && ./_build/ll/scratch.tig.out'
+alias sc2='./tigerll.sh testcases/scratch2.tig && ./_build/ll/scratch2.tig.out'
+alias sc3='./tigerll.sh testcases/scratch3.tig && ./_build/ll/scratch3.tig.out'
 
 bindkey "^K" history-substring-search-up
 bindkey '^[[A' history-substring-search-up
