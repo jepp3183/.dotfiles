@@ -86,9 +86,6 @@ plugins=(
     command-not-found
     asdf
     fzf
-
-
-    # Syntax highlighting has to be last!
     zsh-syntax-highlighting
     zsh-history-substring-search
 )
