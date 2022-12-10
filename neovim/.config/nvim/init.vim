@@ -15,6 +15,7 @@ call plug#begin()
     Plug 'lervag/vimtex'
 
     Plug 'nvim-lua/plenary.nvim'
+    Plug 'sindrets/diffview.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
     Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
