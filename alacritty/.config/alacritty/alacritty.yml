@@ -1,16 +1,16 @@
 font:
   size: 12
   normal: 
-    family: MesloLGMDZ Nerd Font mono 
+    family: MesloLGS NF
     style: Regular
   bold: 
-    family: MesloLGMDZ Nerd Font mono 
+    family: MesloLGS NF
     style: Bold
   italic: 
-    family: MesloLGMDZ Nerd Font mono 
+    family: MesloLGS NF
     style: Italic
   bold_italic: 
-    family: MesloLGMDZ Nerd Font mono 
+    family: MesloLGS NF
     style: Bold Italic
 
 
