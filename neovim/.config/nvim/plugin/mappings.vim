@@ -1,8 +1,6 @@
 imap jj <Esc>
 imap jk <Esc>
 
-map <Enter> o<ESC>k
-
 nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 autocmd TermEnter term://*toggleterm#*
       \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>

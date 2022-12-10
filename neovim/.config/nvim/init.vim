@@ -7,6 +7,7 @@ call plug#begin()
     " Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-unimpaired'
     Plug 'ggandor/leap.nvim'
     Plug 'numToStr/Comment.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
@@ -45,8 +46,10 @@ set splitbelow
 set nowrap
 set ignorecase
 set smartcase
+set scrolloff=8
 
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType yaml set foldmethod=indent
 
 let mapleader=" "
 
@@ -70,7 +73,6 @@ require('lualine').setup {
 }
 
 require('tabline').setup()
-
 require('leap').add_default_mappings()
 require('leap').setup {
     highlight_unlabeled = true
@@ -114,9 +116,8 @@ require('nvim-treesitter.configs').setup {
 require('Comment').setup()
 
 require('gruvbox').setup({
-    bold = false,
-    italic = false
+    bold = true,
+    italic = true
 })
 vim.cmd('colorscheme gruvbox')
-
 EOF
