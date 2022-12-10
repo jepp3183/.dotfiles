@@ -48,6 +48,7 @@ set smartcase
 set scrolloff=8
 
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
+autocmd FileType yaml set foldmethod=indent
 
 let mapleader=" "
 

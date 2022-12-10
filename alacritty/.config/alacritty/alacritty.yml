@@ -101,6 +101,26 @@ colors:
     - { index: 248, color: '#bdae93' }
     - { index: 250, color: '#d5c4a1' }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 
