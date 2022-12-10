@@ -78,8 +78,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# export NVM_LAZY_LOAD=true
-# export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim')
 plugins=( 
     z
     npm
@@ -91,8 +89,6 @@ plugins=(
     fzf
     zsh-syntax-highlighting
     zsh-history-substring-search
-
-    zsh-nvm
 )
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
@@ -150,9 +146,6 @@ export PATH="$PATH:/home/jeppe/.asdf/installs/elixir/1.13.4-otp-25/.mix/escripts
 export PATH="$PATH:/home/jeppe/.opam/4.14.0/bin"
 export PATH="$PATH:/home/jeppe/bin"
 export SHELL=/bin/zsh
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
