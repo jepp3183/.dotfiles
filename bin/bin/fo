@@ -1,0 +1,6 @@
+#!/usr/bin/zsh
+
+source ~/.zshrc
+# FILE=$(find "${1:-/home/jeppe}"  -iname "*" -type f | fzf)
+FILE=$(fd -HI -t f . "${1:-/home/jeppe}" | fzf)
+EDITOR=nvim rifle "$FILE" 2> /dev/null 

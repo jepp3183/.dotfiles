@@ -12,7 +12,7 @@ call plug#begin()
     Plug 'numToStr/Comment.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'nvim-lualine/lualine.nvim'
-    Plug 'kdheepak/tabline.nvim'
+    " Plug 'kdheepak/tabline.nvim'
     Plug 'lervag/vimtex'
 
     Plug 'nvim-lua/plenary.nvim'
@@ -31,7 +31,7 @@ filetype plugin on
 syntax on
 
 set number 
-set cursorline
+" set cursorline
 set relativenumber
 set nocompatible
 set tabstop=4
@@ -66,13 +66,25 @@ require('toggleterm').setup{
   direction = 'float'
 }
 
+local custom_theme = require'lualine.themes.codedark'
+custom_theme.normal.c.bg = nil
+custom_theme.replace.c.bg = nil
+custom_theme.insert.c.bg = nil
 require('lualine').setup {
     options = {
-        theme = 'codedark',
+        theme = custom_theme,
+    },
+    tabline = {
+      lualine_a = {'buffers'},
+      lualine_b = {},
+      lualine_c = {},
+      lualine_x = {},
+      lualine_y = {},
+      lualine_z = {'tabs'}
     }
 }
 
-require('tabline').setup()
+-- require('tabline').setup()
 require('leap').add_default_mappings()
 require('leap').setup {
     highlight_unlabeled = true
@@ -117,7 +129,11 @@ require('Comment').setup()
 
 require('gruvbox').setup({
     bold = true,
-    italic = true
+    italic = true,
+    underline = true,
+    transparent_mode = true,
+    overrides = {
+    }
 })
 vim.cmd('colorscheme gruvbox')
 EOF

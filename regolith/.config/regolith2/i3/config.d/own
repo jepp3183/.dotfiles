@@ -1,0 +1,20 @@
+# File opener
+bindsym $alt+space exec alacritty --class opener -o window.opacity=1.0  -e /home/jeppe/bin/fo
+for_window [class="opener"] floating enable, resize set 1300 600, move position center
+
+# start the two scratch terms
+exec --no-startup-id /home/jeppe/bin/start_scratches.sh
+
+# Scratch term
+for_window [class="scratch-terminal"] floating enable, move to scratchpad, resize set 1300 600
+bindsym $mod+u exec /home/jeppe/bin/start_scratches.sh; [class="scratch-terminal"] scratchpad show, move position center
+
+# calculator
+for_window [class="floatcalc"] floating enable, move to scratchpad, resize set 1300 600
+bindsym $mod+y exec /home/jeppe/bin/start_scratches.sh; [class="floatcalc"] scratchpad show, move position center
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl --player playerctld play-pause
+bindsym XF86AudioPause exec playerctl --player playerctld play-pause
+bindsym XF86AudioNext exec playerctl --player playerctld next
+bindsym XF86AudioPrev exec playerctl --player playerctld previous

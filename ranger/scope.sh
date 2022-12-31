@@ -156,7 +156,8 @@ handle_image() {
         ## Video
          video/*)
              # Thumbnail
-             ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
+             # ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
+             vcsi "${FILE_PATH}" -o ${IMAGE_CACHE_PATH} -g 3x3 --background-color 000000 --metadata-font-color ffffff && exit 6
              exit 1;;
 
         ## PDF
