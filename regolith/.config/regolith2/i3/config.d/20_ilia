@@ -20,6 +20,7 @@ bindsym $mod+$i3-wm.binding.help exec --no-startup-id $i3-wm.program.help -a -t 
 set_from_resource $i3-wm.binding.launcher.window i3-wm.binding.launcher.window Ctrl+space
 set_from_resource $i3-wm.program.launcher.window i3-wm.program.launcher.window ilia -p windows
 bindsym $mod+$i3-wm.binding.launcher.window exec --no-startup-id $i3-wm.program.launcher.window -t $ilia.stylesheet
+bindsym Mod1+Tab exec --no-startup-id rofi -modi combi -combi-modi window -show combi 
 
 ## Launch // File Search // <><Alt> Space ##
 set_from_resource $i3-wm.binding.file_search i3-wm.binding.file_search space
