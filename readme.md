@@ -1,12 +1,8 @@
-# Install
-## .bashrc_own
-```bash
-ln -s ~/.dotfiles/.bashrc_own ~/.bashrc_own
-echo "source ~/.bashrc_own" >> .bashrc
-```
+# Dotfiles for pretty much everything!
+Based on pop-OS with regolith installed
 
-## init.vim (neovim)
-```bash
-Symlink init.vim to ~/.config/nvim/init.vim
-ln -s ~/.dotfiles/init.vim ~/.config/nvim/init.vim
-```
+Requires:
+- tree (apt)
+- fd (symlink fdfind from apt with `ln -s $(which fdfind) ~/.local/bin/fd`
+- fzf (duh)
+- vcsi for video sheets in ranger (`pip install vcsi`)
