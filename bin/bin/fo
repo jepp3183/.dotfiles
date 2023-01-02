@@ -2,5 +2,5 @@
 
 source ~/.zshrc
 # FILE=$(find "${1:-/home/jeppe}"  -iname "*" -type f | fzf)
-FILE=$(fd -HI -t f . "${1:-/home/jeppe}" | fzf)
+FILE=$(fd -I -t f . "${1:-/home/jeppe}" | fzf)
 EDITOR=nvim rifle "$FILE" 2> /dev/null 

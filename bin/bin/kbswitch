@@ -1,0 +1,14 @@
+#! /usr/bin/bash
+
+curLayout=`setxkbmap -query | sed -n 's/layout:\s*\(..\).*/\1/p'`
+
+if [ $curLayout == "us" ] 
+then
+    setxkbmap dk
+    zenity --notification --text="Keyboard layout changed to DK"
+fi
+if [ $curLayout == "dk" ] 
+then
+    setxkbmap us
+    zenity --notification --text="Keyboard layout changed to US"
+fi
