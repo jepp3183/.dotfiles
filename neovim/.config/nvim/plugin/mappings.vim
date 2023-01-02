@@ -16,6 +16,7 @@ nnoremap <C-h> <cmd>bprev<cr>
 nnoremap <C-l> <cmd>bnext<cr>
 nnoremap <C-s> :w<CR>
 nnoremap <C-q> :bd<CR>
+nnoremap <Enter> ]<leader>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>

@@ -2,8 +2,6 @@
 set signcolumn=number
 set updatetime=300
 
-nmap <leader>rn <Plug>(coc-rename)
-
 " Fix for copilot/coc tab
 function! CheckBackSpace() abort
   let col = col('.') - 1
@@ -34,10 +32,15 @@ function! ShowDocumentation()
   endif
 endfunction
 
-" Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
-
-nmap gd <Plug>(coc-definition)
-
 " GO settings
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+
+" Apply AutoFix to problem on the current line.
+nmap <leader>qf  <Plug>(coc-fix-current)
+nmap gd <Plug>(coc-definition)
+nmap <leader>rn <Plug>(coc-rename)
+" Applying code actions to the selected code block
+" Example: `<leader>aap` for current paragraph
+xmap <leader>a  <Plug>(coc-codeaction-selected)
+nmap <leader>a  <Plug>(coc-codeaction-selected)
+
