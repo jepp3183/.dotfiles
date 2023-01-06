@@ -105,6 +105,10 @@ window:
   opacity: 0.80
 
 
+key_bindings:
+  - { key: N, mods: Control, action: SpawnNewInstance }
+
+
 
 
 
