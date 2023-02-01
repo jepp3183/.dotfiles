@@ -51,6 +51,8 @@ set scrolloff=8
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
 autocmd FileType yaml set foldmethod=indent
 
+let g:vimtex_view_method = 'zathura'
+
 let mapleader=" "
 
 lua << EOF
