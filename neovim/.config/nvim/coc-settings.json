@@ -9,6 +9,7 @@
     "python.formatting.provider": "autopep8",
     "python.formatting.autopep8Path": "~/.local/bin/autopep8",
     "python.typeChecking.mode": "strict",
+    "python.analysis.diagnosticMode": "workspace",
     "languageserver": {
         "ocaml-lsp": {
             "command": "opam",
