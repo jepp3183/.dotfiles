@@ -20,7 +20,8 @@ nnoremap <Enter> ]<leader>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fo <cmd>Telescope coc workspace_symbols<cr>
+nnoremap <leader>fo <cmd>Telescope coc document_symbols<cr>
+nnoremap <leader>fao <cmd>Telescope coc workspace_symbols<cr>
 nnoremap <leader>fr <cmd>Telescope coc references_used<cr>
 nnoremap <leader>fd <cmd>Telescope coc workspace_diagnostics<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
