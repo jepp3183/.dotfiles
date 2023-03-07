@@ -26,6 +26,7 @@ nnoremap <leader>fr <cmd>Telescope coc references_used<cr>
 nnoremap <leader>fd <cmd>Telescope coc workspace_diagnostics<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>gd <cmd>Telescope git_status<cr>
 imap <silent><script><expr> <C-L> copilot#Accept("\<CR>")
 let g:copilot_no_tab_map = v:true
 
