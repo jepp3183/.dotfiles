@@ -102,7 +102,7 @@ colors:
     - { index: 250, color: '#d5c4a1' }
 
 window:
-  opacity: 0.80
+  opacity: 0.90
 
 
 key_bindings:

@@ -22,3 +22,6 @@ bindsym XF86AudioPrev exec playerctl --player playerctld previous
 # Open zeal flaoting
 for_window [class="Zeal"] floating enable, resize set 1500 1000, move position center 
 bindsym $alt+z exec /usr/bin/zeal
+
+# TabbleBrowser non-floating
+for_window [class="TabbleBrowser"] floating disable
