@@ -4,7 +4,7 @@ call plug#begin()
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'akinsho/toggleterm.nvim', {'tag' : '2.2.1'}
     Plug 'ellisonleao/gruvbox.nvim'
-    " Plug 'jiangmiao/auto-pairs'
+    Plug 'windwp/nvim-autopairs'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-unimpaired'
@@ -12,8 +12,8 @@ call plug#begin()
     Plug 'numToStr/Comment.nvim'
     Plug 'kyazdani42/nvim-web-devicons'
     Plug 'nvim-lualine/lualine.nvim'
-    " Plug 'kdheepak/tabline.nvim'
     Plug 'lervag/vimtex'
+    Plug 'kshenoy/vim-signature'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'sindrets/diffview.nvim'
@@ -31,7 +31,7 @@ filetype plugin on
 syntax on
 
 set number 
-" set cursorline
+set cursorline
 set relativenumber
 set nocompatible
 set tabstop=4
@@ -49,13 +49,15 @@ set smartcase
 set scrolloff=8
 
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
-" autocmd FileType yaml set foldmethod=indent
 
 let g:vimtex_view_method = 'zathura'
 
 let mapleader=" "
 
 lua << EOF
+
+require('nvim-autopairs').setup { }
+
 require('toggleterm').setup{
   open_mapping = [[<c-t>]],
   size =  function(term)
@@ -86,7 +88,6 @@ require('lualine').setup {
     }
 }
 
--- require('tabline').setup()
 require('leap').add_default_mappings()
 require('leap').setup {
     highlight_unlabeled = true
@@ -119,7 +120,6 @@ require('telescope').setup{
     }
   }
 }
-
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
 
