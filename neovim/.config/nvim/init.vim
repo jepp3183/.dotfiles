@@ -14,6 +14,7 @@ call plug#begin()
     Plug 'nvim-lualine/lualine.nvim'
     Plug 'lervag/vimtex'
     Plug 'kshenoy/vim-signature'
+    Plug 'kaarmu/typst.vim'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'sindrets/diffview.nvim'
@@ -49,12 +50,14 @@ set smartcase
 set scrolloff=8
 
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
+autocmd BufRead,BufNewFile *.typ set filetype=typst
 
 let g:vimtex_view_method = 'zathura'
 
 let mapleader=" "
 
 lua << EOF
+
 
 require('nvim-autopairs').setup { }
 
