@@ -1,6 +1,5 @@
 call plug#begin()
     Plug 'github/copilot.vim'
-    Plug 'preservim/nerdtree'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'akinsho/toggleterm.nvim', {'tag' : '2.2.1'}
     Plug 'ellisonleao/gruvbox.nvim'
@@ -15,6 +14,7 @@ call plug#begin()
     Plug 'lervag/vimtex'
     Plug 'kshenoy/vim-signature'
     Plug 'kaarmu/typst.vim'
+    Plug 'nvim-tree/nvim-tree.lua'
 
     Plug 'nvim-lua/plenary.nvim'
     Plug 'sindrets/diffview.nvim'
@@ -23,8 +23,6 @@ call plug#begin()
     Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
     Plug 'fannheyward/telescope-coc.nvim'
 call plug#end()
-
-let NERDTreeShowHidden=1
 
 set background=dark
 
@@ -58,6 +56,10 @@ let mapleader=" "
 
 lua << EOF
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+require('nvim-tree').setup()
 
 require('nvim-autopairs').setup { }
 

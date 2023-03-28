@@ -1,15 +1,13 @@
 imap jj <Esc>
 imap jk <Esc>
 
-nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
-autocmd TermEnter term://*toggleterm#*
-      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+" nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+" autocmd TermEnter term://*toggleterm#*
+"       \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
 tnoremap <C-N> <C-\><C-N>
 
-nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>t :NvimTreeToggle<CR>
 
-" nnoremap <C-d> <C-d>zz
-" nnoremap <C-u> <C-u>zz
 noremap <C-j> 5j
 noremap <C-k> 5k
 nnoremap <C-h> <cmd>bprev<cr>
