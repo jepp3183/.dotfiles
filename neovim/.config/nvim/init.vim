@@ -46,6 +46,7 @@ set nowrap
 set ignorecase
 set smartcase
 set scrolloff=8
+set mouse=a
 
 autocmd FileType ocaml setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufNewFile *.typ set filetype=typst
