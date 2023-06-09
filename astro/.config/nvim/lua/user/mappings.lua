@@ -21,7 +21,7 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    ["<C-t>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+    ["<C-t>"] = { "<cmd>exe v:count1 . \"ToggleTerm\"<cr>", desc = "Toggle terminal" },
     ["<C-j>"] = { "5j", desc = "down 5 lines" },
     ["<C-k>"] = { "5k", desc = "up 5 lines" },
     ["<C-q>"] = { "<cmd>bd<cr>", desc = "Close buffer" },
