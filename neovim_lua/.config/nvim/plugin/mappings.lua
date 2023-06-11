@@ -24,6 +24,7 @@ vim.keymap.set('n', '<Leader>fg', '<cmd>Telescope live_grep<cr>')
 vim.keymap.set('n', '<Leader>fb', '<cmd>Telescope buffers<cr>')
 vim.keymap.set('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>')
 vim.keymap.set('n', '<Leader>fk', '<cmd>Telescope keymaps<cr>')
+vim.keymap.set('n', '<Leader>fc', '<cmd>Telescope find_files cwd=~/.dotfiles/neovim_lua/.config/nvim<cr>')
 
 -- COC
 vim.keymap.set('n', 'gd', '<Plug>(coc-definition)')
