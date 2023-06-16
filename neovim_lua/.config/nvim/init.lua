@@ -12,6 +12,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+    "max397574/better-escape.nvim",
     "github/copilot.vim",
     {"neoclide/coc.nvim", branch="release"},
     "akinsho/toggleterm.nvim",
